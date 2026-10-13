@@ -12,7 +12,7 @@ tags:
 | $\zeta$           | Bond-length distortion.                                                                  |
 | $\Delta$          | Normalized bond-length variance.                                                         |
 | $\Sigma$          | Cis-angle distortion.                                                                    |
-| $\Theta$          | Face-twisting distortion: 0° for a perfect octahedron, up to 1170° for a trigonal prism. |
+| $\Theta$          | Face-twisting distortion.                                                                |
 | $\tau$            | Trans-angle distortion.                                                                  |
 | $\mu$             | Norm of the mean ligand vector: how far the centre is from the ligands' vector centroid. |
 | Volume            | Volume of the coordination polyhedron, in Å³.                                            |

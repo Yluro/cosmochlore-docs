@@ -1,12 +1,15 @@
 ---
-title: Geometry indices
+title: Geometry Indices
 tags:
   - theory
 ---
 
-[[commands/gidx|`gidx`]] places a coordination centre between ideal geometries using only its ligand–centre–ligand angles; bond lengths play no part. For four and five ligands, $\beta$ and $\alpha$ are the largest and second-largest of those angles.
+The Geometry Index ($\tau$) is a structural parameter that ranges from 0 to 1 that indicates the what geometry a coordination centre is taking into account the ligand–centre–ligand angles. 
 
-## Four-coordinate: τ4 and τ4′
+They can be calculated by calling [[gidx]]. 
+# Four-coordinate
+
+The four coordinate indices τ<sub>4</sub> and τ<sub>4</sub>′  were developed by [@yang_structural_2007] and are calculated by the formulas:
 
 $$
 \tau_4 = \frac{360^\circ - (\alpha + \beta)}{360^\circ - 2\theta}
@@ -14,10 +17,11 @@ $$
 \tau_4' = \frac{\beta - \alpha}{360^\circ - \theta} + \frac{180^\circ - \beta}{180^\circ - \theta}
 $$
 
-with $\theta = \arccos(-1/3) \approx 109.47^\circ$. Both are 0 for a square plane and 1 for a regular tetrahedron.
+with $\theta = \arccos(-1/3) \approx 109.47^\circ$. Both range from 0 for the square-planar geometry and 1 for a regular tetrahedron.
 
-## Five-coordinate: τ5
+## Five-coordinate: τ<sub>5</sub>
 
+The five coordinate index was developed by 
 $$
 \tau_5 = \frac{\beta - \alpha}{60^\circ}
 $$
@@ -36,3 +40,5 @@ $\alpha_1 \ge \alpha_2 \ge \alpha_3$ are the three trans angles, and $\gamma_1 \
 
 > [!todo] To do
 > Port the tables of indices for the ideal shapes and the notes on pairing trans angles from the [README](https://github.com/Yluro/cosmochlore#geometry-indices).
+
+# References

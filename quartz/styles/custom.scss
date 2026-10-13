@@ -1,3 +1,13 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+// Keep the citation number on the same line as its reference entry
+.csl-left-margin,
+.csl-right-inline {
+  display: inline;
+}
+
+.csl-left-margin {
+  margin-right: 0.5em;
+}

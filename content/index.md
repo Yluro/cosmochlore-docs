@@ -1,9 +1,9 @@
 ---
 title: Cosmochlore
-description: Continuous Shape/Symmetry Measurements & Octahedral distortion, in Rust.
+description: Continuous Shape & Symmetry Measurements in Rust.
 ---
 
-**COSMO**chlo**R**e (**Co**ntinuous **S**hape/**S**ymmetry **M**easurements & **O**ctahedral distortion, in **R**ust) is a fast, pure-Rust command line tool for quantifying how closely a molecular structure, or any set of 3D points, matches an idealized reference geometry.
+**COSMO**chlo**R**e (**Co**ntinuous **S**hape & **S**ymmetry **M**easurements in **R**ust) is a fast, pure-Rust command line tool for quantifying how closely a molecular structure, or any set of 3D points, matches an idealized reference geometry. Definetly
 
 > [!info] Work in progress
 > This site is the new home of the Cosmochlore documentation. Pages marked with a **To do** callout are still being written. Until then, the [README](https://github.com/Yluro/cosmochlore#readme) remains the reference.

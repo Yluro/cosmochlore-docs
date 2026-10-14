@@ -4,7 +4,7 @@ tags:
   - reference
 ---
 
-[[commands/csom|`csom -p/--pg`]] accepts any of these 47 point groups in Schoenflies notation. All of them are analyzed when the flag is omitted.
+[[csom|`csom -p/--pg`]] accepts any of these 47 point groups in Schoenflies notation. All of them are analyzed when the flag is omitted.
 
 ```text
 C2   C2h  C2v  C3   C3h  C3v  C4   C4h  C4v  C5   C5h  C5v

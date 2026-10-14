@@ -11,3 +11,10 @@
 .csl-left-margin {
   margin-right: 0.5em;
 }
+
+// Keep the collapsed mobile explorer dropdown inside the screen width
+@media all and ($mobile) {
+  .explorer-content {
+    max-width: calc(100% - 2rem);
+  }
+}

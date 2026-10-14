@@ -211,7 +211,7 @@ a {
       grid-template-areas: #{map.get($mobileGrid, templateAreas)};
     }
 
-    @media all and not ($desktop) {
+    @media all and (not ($desktop)) {
       padding: 0 1rem;
     }
     @media all and ($mobile) {
@@ -239,8 +239,7 @@ a {
         display: flex;
         height: unset;
         flex-direction: row;
-        padding: 0;
-        padding-top: 2rem;
+        padding: 2rem 0 0;
       }
     }
 
@@ -252,7 +251,7 @@ a {
         margin-left: inherit;
         margin-right: inherit;
       }
-      @media all and not ($desktop) {
+      @media all and (not ($desktop)) {
         position: initial;
         height: unset;
         width: 100%;
@@ -552,6 +551,7 @@ code {
   border-radius: 5px;
   padding: 0.1rem 0.2rem;
   background: var(--lightgray);
+  overflow-wrap: anywhere;
 }
 
 tbody,

@@ -18,3 +18,37 @@
     max-width: calc(100% - 2rem);
   }
 }
+
+// Right sidebar (desktop): give the table of contents most of the space,
+// instead of letting it shrink to a scrolling sliver between the graph and
+// backlinks; it grows to fit its headings, with no scrollbar
+@media all and (min-width: 1200px) {
+  .sidebar.right {
+    .graph > .graph-outer {
+      height: 180px;
+    }
+
+    .toc {
+      flex: 0 0 auto;
+      overflow-y: visible;
+    }
+
+    .toc ul.toc-content.overflow {
+      max-height: none;
+      overflow-y: visible;
+      -webkit-mask-image: none;
+      mask-image: none;
+    }
+
+    // The default collapse relies on the TOC being squeezed to a fixed height
+    .toc:has(button.toc-header.collapsed) .toc-content {
+      display: none;
+    }
+
+    .backlinks {
+      flex: 0 1 auto;
+      min-height: 6rem;
+      max-height: 30%;
+    }
+  }
+}

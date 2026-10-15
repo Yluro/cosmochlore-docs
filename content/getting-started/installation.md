@@ -105,14 +105,14 @@ You will need [Git](https://git-scm.com/) and the Rust compiler and toolchain (i
 ```bash
 git clone https://github.com/Yluro/cosmochlore
 cd cosmochlore
-git checkout $"(git describe --tags --abbrev=0)"
+git checkout "$(git describe --tags --abbrev=0)"
 cargo build --release
 ```
 
 The compiled binary is written to `target/release/cosmochlore`.
 
 > [!tip] Experimental versions
-> The `main` branch contains experimental features. To use them, omit the `git checkout $"(git describe --tags --abbrev=0)"` command when building cosmochlore
+> The `master` branch contains experimental features. To use them, skip the `git checkout` line, which switches to the latest release.
 
 ## Troubleshooting
 

@@ -2,6 +2,14 @@
 
 // put your custom CSS here!
 
+// Stop superscripts (citation numbers) and subscripts from pushing apart the
+// lines they sit on: with the inherited line-height their raised box grows the
+// line box, giving uneven spacing within a paragraph
+sup,
+sub {
+  line-height: 0;
+}
+
 // Keep the citation number on the same line as its reference entry
 .csl-left-margin,
 .csl-right-inline {

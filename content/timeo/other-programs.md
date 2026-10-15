@@ -31,7 +31,7 @@ autoSHAPE does not overwrite previous runs. Each run is stored in its own folder
 
 ## Octahedral Distortion
 
-Timeo includes its own Python reimplementation of the [OctaDist](https://octadist.github.io/)<sup>[[references|4]]</sup> algorithm. It is separate from the one in Cosmochlore (`spy.Timeo.autoODIS()`, see [[odis|odis]] and [[theory/octahedral-distortion|the theory page]]).
+Timeo includes its own Python reimplementation of the [OctaDist](https://octadist.github.io/)[@ketkaew_octadist_2021] algorithm. It is separate from the one in Cosmochlore (`spy.Timeo.autoODIS()`, see [[odis|odis]] and [[theory/octahedral-distortion|the theory page]]).
 
 Unlike the original implementation, this version identifies opposite faces and vertices of an octahedron using topological criteria. It constructs a convex hull that is topologically equivalent to an octahedron and uses face-vertex relationships to identify the oposite pairs of faces.
 

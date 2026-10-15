@@ -20,7 +20,7 @@ Cosmochlore is an independent, from-scratch implementation of all these measurem
 
 - The branch and bound, the partial assignment method and the model shapes of the `cshm` module are based on `cosymlib` (`shp.f90`), Copyright (c) 2021 Pere Alemany, Efrem Bernuz, Abel Carreras and Miquel Llunell, licensed under the MIT Licence.
 - The Fibonacci seeding and point group tables of the `csom` module are based on `csom_main.py`, Copyright (c) 2024 Villads R. M. Nielsen, Boris Le Guennic and Thomas Just Sørensen, licensed under the GNU General Public Licence v3.0 (GPL-3.0).
-- Parts of the `odis` module are based on the [`OctaDist`](https://octadist.github.io/)<sup>[[references|4]]</sup> algorithm, Copyright (c) 2019-2026 Rangsiman Ketkaew et al., licensed under the GNU General Public Licence v3.0 (GPL-3.0).
+- Parts of the `odis` module are based on the [`OctaDist`](https://octadist.github.io/)[@ketkaew_octadist_2021] algorithm, Copyright (c) 2019-2026 Rangsiman Ketkaew et al., licensed under the GNU General Public Licence v3.0 (GPL-3.0).
 
 ### Dependencies
 

@@ -33,7 +33,7 @@ Workflow:
 
 ## π-bonded ligands
 
-Timeo can detect η<sup>n</sup> π-bonded ligands. When `merge_ligands` is enabled, the coordinates of all the donor atoms of each ligand are averaged to its centroid before measuring, following Cirera _et al._<sup>[[references|1]]</sup>
+Timeo can detect η<sup>n</sup> π-bonded ligands. When `merge_ligands` is enabled, the coordinates of all the donor atoms of each ligand are averaged to its centroid before measuring, following Cirera _et al._[@cirera_continuous_2005].
 
 > [!note]
 > Centroid search does not work with ligands outside the asymmetric unit.

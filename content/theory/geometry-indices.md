@@ -29,9 +29,6 @@ $$
 
 **τ<sub>5</sub>** [@addison_synthesis_1984] is 0 for a square pyramid and 1 for a trigonal bipyramid.
 
-## Five-coordinate: τ<sub>5</sub>
-
-The five coordinate index was developed by 
 $$
 \tau_5 = \frac{\beta - \alpha}{60^\circ}
 $$

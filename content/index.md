@@ -9,7 +9,7 @@ complementary analyses, including: Continuous Shape Measures (CShM), Continuous 
 and the calculation of several geometric parameters.
 
 It is a from-scratch command line interface (CLI) tool that reimplements the shape-measure engine found in 
-[`cosymlib`](https://github.com/GrupEstructuraElectronicaSimetria/cosymlib) and `SHAPE`[@alvarez_shape_2005] 2.1 in Rust, alongside an original implementation of continuous symmetry operation measures inspired by the works of T. J. Sørensen _et al._[@sorensen] and the octahedral distortion parameters popularized by [`OctaDist`](https://octadist.github.io/)<sup>[[references|4]]</sup>. Cosmochlore accurately reproduces `SHAPE`'s 2.1 results using a pruned branch-and-bound algorithm for significantly faster performance on larger coordination numbers.
+[`cosymlib`](https://github.com/GrupEstructuraElectronicaSimetria/cosymlib) and `SHAPE`[@alvarez_shape_2005] 2.1 in Rust, alongside an original implementation of continuous symmetry operation measures inspired by the works of T. J. Sørensen _et al._[@nielsen_csom_2024] and the octahedral distortion parameters popularized by [`OctaDist`](https://octadist.github.io/)[@ketkaew_octadist_2021]. Cosmochlore accurately reproduces `SHAPE`'s 2.1 results using a pruned branch-and-bound algorithm for significantly faster performance on larger coordination numbers.
 
 Cosmochlore's error handling will always tell the user if something went wrong at run-time: the program will never silently crash or give you a number without you knowing something went wrong.
 

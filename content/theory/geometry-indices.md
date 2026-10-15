@@ -135,7 +135,8 @@ For the two pyramids the paper's value is $(1 + \tau_6')/2$ (1.022 and 0.998), s
 
 $\Delta = \tau_8' - \tau_8$ (the larger τ8 of the two faces). The two values of τ8 for the biaugmented trigonal prism are those of its two square faces. The last row is the DFT-optimised structure of the paper's supporting information (donor atoms only, `tests/tau8/WF4_PH3_4_D2.xyz`), in between the dodecahedron and the antiprism; its two faces give the same τ8.
 
-A few things to keep in mind when reading them:
+> [!note] Chelate complexes in the supporting information
+> For some chelates, the τ<sub>8</sub> values listed in the paper's supporting information [@turnbull_stabilisation_2021] differ from this procedure: it lists τ<sub>8</sub> = 1.22 for [WF<sub>4</sub>(dpb)<sub>2</sub>]<sup>+</sup> (D<sub>2d</sub>), where `gidx` gives 1.10 from the coordinates in the same file, and 0.05 and 0.02 for the C<sub>2</sub> state of [WF<sub>4</sub>(dpe)<sub>2</sub>]<sup>+</sup>, where it gives 0.06 and 0.05. The source of the difference could not be traced.
 
 
 # References

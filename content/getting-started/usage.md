@@ -20,6 +20,23 @@ cosmochlore <COMMAND> <NAME> [OPTIONS]
 
 `<NAME>` is the path to the input `.xyz` file with the structure to analyze.
 
+## Global options
+
+Global options go before the command:
+
+| Flag              | Description                                                                                                                                                    |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `-s`, `--silent`  | Print nothing to the terminal (banner, tables and progress messages). Files requested with flags are still written, and errors are still printed to stderr. |
+| `-h`, `--help`    | Print the help.                                                                                                                                                |
+| `-V`, `--version` | Print the version.                                                                                                                                             |
+
+```bash
+cosmochlore -s cshm FeHS.xyz -t
+```
+
+> [!warning]
+> After the command, `-s` means something else: `--sh` for [[cshm|cshm]] and `--seeds` for [[csom|csom]].
+
 ## Input files
 
 Structures are read from standard `.xyz` files: the number of atoms, a comment line, then one `label x y z` line per atom.

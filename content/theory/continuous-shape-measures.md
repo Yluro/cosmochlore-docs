@@ -7,7 +7,7 @@ tags:
 
 Given two sets of $N$ points $P$ and $Q$ in $\mathbb{R}^n$ (normally $n = 3$), find the transformation $T$ that best maps $Q$ onto $P$, that is, the one that minimizes the sum of squared distances between paired points $p_i$ and $Tq_i$.
 
-The Continuous Shape Measure of a problem shape $Q$ relative to a reference shape $P$ is the squared distance from , normalised and expressed as a percentage [@pinsky_continuous_1998; @casanova_minimal_2004; @alvarez_shape_2005]:
+The Continuous Shape Measure of a problem shape $Q$ relative to a reference shape $P$ is the squared distance from $Q$ to $P$, normalised and expressed as a percentage [@pinsky_continuous_1998; @casanova_minimal_2004; @alvarez_shape_2005]:
 
 $$
 S_P(Q) = \min \left( \frac{\sum_{i}^{N} |q_i - p_i|^2}{\sum_{i}^{N} |p_i - p_0|^2} \right) \times 100

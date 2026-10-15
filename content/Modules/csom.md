@@ -31,7 +31,30 @@ cosmochlore csom <NAME> [OPTIONS]
 | `-g`, `--ignore`     |                                             | Ignore atom labels when searching for the best atom-to-atom permutation: every atom is treated as interchangeable regardless of element/label, instead of only matching atoms that share a label.                                                                                                                                                                                                      |
 
 > [!warning]
-> Changing `--seeds`, `--iterations` or `--tolerance` may result in long run times. It is 
+> Changing `--seeds`, `--iterations` or `--tolerance` may result in long run times. It is recommended to leave them at their defaults.
+
+## Orientation search
+
+The symmetry operations of every [[reference/point-groups|point group]] are tabulated with the principal axis along $z$, 
+so the structure first has to be rotated into the orientation $R$ that minimizes $S_G(RQ)$ (see 
+[[theory/continuous-symmetry-operation-measures#Orientation Matrix|orientation matrix]]). Once the structure is centred 
+(see `--mode`), `csom` searches for $R$ in three steps:
+
+1. **Fibonacci-hemisphere seeding:** `--seeds` candidate directions for the principal axis are spread evenly over the 
+   upper hemisphere (an axis and its opposite are the same axis), and each seed is the rotation that carries one of them 
+   onto $z$. Whatever the input orientation, some seed therefore starts with the true axis within the lattice spacing of $z$. 
+   Aligning the axis leaves the spin about it free. When the point group has vertical mirror planes or perpendicular $C_2$ 
+   axes, which make that spin matter, every direction is also tried at several in-plane angles, in steps no coarser than the 
+   lattice spacing, up to the angle after which the group repeats: 90° for $C_{2v}$ or $O_h$, 30° for $D_{6h}$, and none 
+   at all for $C_n$, $S_n$, $C_{nh}$, $C_s$ or $C_i$.
+2. **Nelder-Mead refinement:** every seed is refined with the derivative-free Nelder-Mead method over the three components 
+   of the rotation vector, until the simplex converges to `--tolerance` or `--iterations` steps are reached. The refined 
+   rotation with the lowest deviation over all seeds is kept as the orientation for that point group.
+3. **Atom pairing:** for every operation $\hat{O}$, the pairing $\pi$ of each image $\hat{O}Rq_i$ with an original point is 
+   found with the Hungarian algorithm. Atoms are only paired with atoms of the same element, read from the start of their 
+   label (`N004` and `N006` are both `N`), unless `--ignore` is passed. When the structure is centred on an atom, that atom 
+   sits at the origin and is invariant under every operation, so it is paired with itself and left out of the search. This 
+   reduces the size of the assignment by one at no cost in accuracy.
 
 ## Examples
 

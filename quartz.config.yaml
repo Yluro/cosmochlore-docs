@@ -89,7 +89,7 @@ plugins:
   - source: "@quartz-community/citations"
     enabled: true
     options:
-      bibliographyFile: ./indices.bib
+      bibliographyFile: ./references.bib
       linkCitations: true
       csl: ./csl/nature.csl
     order: 85
@@ -185,10 +185,10 @@ plugins:
       position: beforeBody
       priority: 20
   - source: "@quartz-community/tag-list"
-    enabled: false
+    enabled: true
     layout:
-      position: beforeBody
-      priority: 30
+      position: right
+      priority: 90
   - source: "@quartz-community/page-title"
     enabled: true
     layout:
@@ -253,7 +253,7 @@ plugins:
         - tags
         - aliases
       excludedProperties: []
-      hidePropertiesView: false
+      hidePropertiesView: true
       delimiters: ---
       language: yaml
     order: 5

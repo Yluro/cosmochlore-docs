@@ -1,6 +1,6 @@
 ---
 title: odis
-description: OctaDist-style octahedral distortion parameters.
+description: Octahedral distortion parameters of a six-coordinate centre.
 tags:
   - command
 ---

@@ -22,7 +22,7 @@ Cosmochlore's error handling will always tell the user if something went wrong a
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | [[cshm\|cshm]] | Continuous Shape Measures (CShM) against 92 built-in reference polyhedra or your own shapes. A value of `CShM = 0` is a perfect match.     |
 | [[csom\|csom]] | Continuous Symmetry Operation Measures (CSoM) against any of 47 point groups. A value of `CSoM = 0` means the symmetry is fully conserved. |
-| [[odis\|odis]] | OctaDist-style bond-length and angular distortion parameters for six-coordinate centres.                                                   |
+| [[odis\|odis]] | Bond-length and angular distortion parameters for six-coordinate centres.                                                                |
 | [[gidx\|gidx]] | Geometry indices τ4 and τ4′ (four-coordinate), τ5 (five), τ6 and τ6′ (six), and τ8 and τ8′ (eight-coordinate centres).                     |
 
 ## Where to start
